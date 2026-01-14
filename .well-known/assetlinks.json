@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.psted.warnify",
+      "sha256_cert_fingerprints":
+        ["65:64:DF:F6:75:2C:C9:1B:C2:64:8B:9F:E7:DA:17:BA:F7:5F:18:37:57:A9:58:BD:A7:C2:FD:58:43:28:C2:BB"]
+    }
+  }
+]
