@@ -2,6 +2,19 @@
   <HEAD>
     <title>Warnify - your Safety Companion app.</title>
   </HEAD>
+	
+<script>
+function openApp() {
+    // Attempt to open the app
+    window.location = "intent://warnify#Intent;scheme=warnify;package=com.psted.warnify;end";
+    
+    // Fallback to Play Store after a timeout
+    setTimeout(function() {
+        window.location = "https://play.google.com/store/apps/details?id=com.psted.warnify";
+    }, 2000); // 2 seconds
+}
+</script>
+	
 <style>
 body {
   margin: 0;
