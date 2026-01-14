@@ -1,0 +1,155 @@
+<HTML>
+  <HEAD>
+    <title>Warnify - your Safety Companion app.</title>
+  </HEAD>
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+	@media (max-width: 767px) {
+		.markdown-body {
+			padding: 15px;
+		}
+	}
+</style>
+
+<script>
+function openApp() {
+    // Attempt to open the app
+    window.location = "intent://warnify#Intent;scheme=warnify;package=com.psted.warnify;end";
+    
+    // Fallback to Play Store after a timeout
+    setTimeout(function() {
+        window.location = "https://play.google.com/store/apps/details?id=com.psted.warnify";
+    }, 2000); // 2 seconds
+}
+</script>
+	
+	<BODY bgcolor=black>
+<div class="intro" role="region" aria-label="Quick actions">
+    <div>
+      <div class="badge">GPS · Community · Real-time</div>
+      <p style="margin:6px 0 0 0;color:var(--muted);font-size:13px">Built to keep you safe outside — accurate, community-driven warnings near your location.</p>
+    </div>
+    <div class="cta">
+      <button class="btn" title="Get Warnify">Get the App</button>
+      <button class="btn ghost" title="Learn More">How it Works</button>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="how">
+    <h2 id="how">How Warnify Works</h2>
+    <p class="lead">Warnify uses your device GPS to match your current coordinates against a live dataset of user-created warnings. When you enter or near an area flagged as hazardous, unfriendly, criminal, or health-risking, Warnify immediately notifies you so you can make safer choices.</p>
+
+    <div class="features" aria-hidden="false">
+      <article class="feature">
+        <div class="ico">📡</div>
+        <div>
+          <h3>Real-time GPS Alerts</h3>
+          <p>Continuous location monitoring (optional) with proximity-based notifications when you approach flagged zones.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="ico">🛑</div>
+        <div>
+          <h3>Custom Warning Types</h3>
+          <p>Tag warnings as criminal, unsafe, health hazard, or other — each type has a distinct icon and recommended actions.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="ico">🗳️</div>
+        <div>
+          <h3>Voting & Verification</h3>
+          <p>Community votes validate warnings. Repeated confirmations archive accurate warnings; disputed ones are rechecked.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="ico">🏆</div>
+        <div>
+          <h3>Points & Reputation</h3>
+          <p>Earn points for contributing accurate warnings and flagging incorrect posts. Compete to become your neighborhood's top Safety Officer.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="privacy">
+    <h2 id="privacy">Safety & User Controls</h2>
+    <p class="lead">Warnify is designed for responsible local reporting. Users control visibility, range, and type of each posted warning. Reporting tools include text, category selection, photo attachments, and an optional brief note for context.</p>
+
+    <ul style="margin:12px 0 0 18px;color:var(--muted);font-size:13px">
+      <li><strong>Range-limited posts:</strong> warnings must be created within a short radius of the reporter's current GPS coordinate.</li>
+      <li><strong>Accurate and up-to-date:</strong> warnings can auto-expire and be archived without community review.</li>
+      <li><strong>Moderation:</strong> combined voting and archive rules reduce false positives and stale data.</li>
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="usecases">
+    <h2 id="usecases">When to Use Warnify</h2>
+    <p class="lead">On your daily commute or while traveling, any outside scenarios where Warnify helps you stay safer outdoors.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)">
+        <strong>Night travel</strong>
+        <p style="margin:8px 0 0 0;color:var(--muted)">Receive early alerts when walking through unfamiliar neighborhoods after dark.</p>
+      </div>
+      <div style="background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)">
+        <strong>Health hazards</strong>
+        <p style="margin:8px 0 0 0;color:var(--muted)">Avoid areas flagged for poor air quality, construction dust, or other localized health risks.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">Available on iOS and Android. Warning data is community-curated and continuously updated.</div>
+</main>
+
+<aside class="side" aria-labelledby="panel-title">
+  <div style="display:flex;gap:12px;align-items:center;">
+    <div class="pill" role="status" aria-live="polite">
+      <span style="font-weight:700;color:var(--accent)">Near</span>
+      <span style="color:var(--muted)">100m</span>
+    </div>
+    <div style="margin-left:auto;">
+      <button class="btn" style="padding:8px 10px;font-size:13px">Report Warning</button>
+    </div>
+  </div>
+
+  <div class="map-preview" aria-hidden="true">
+    <div style="text-align:center">
+      <div style="margin-bottom:8px;font-weight:700">Map Preview</div>
+      <div style="display:flex;gap:10px;align-items:center;justify-content:center">
+        <div class="map-dot" aria-hidden="true"></div>
+        <div style="color:var(--muted);font-size:13px">Flagged zone near you</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats" role="group" aria-label="Summary stats">
+    <div class="stat">
+      <h4>1.9k</h4>
+      <p>Warnings reported</p>
+    </div>
+    <div class="stat">
+      <h4>820</h4>
+      <p>Verified by votes</p>
+    </div>
+    <div class="stat">
+      <h4>4.8</h4>
+      <p>Avg. neighborhood rating</p>
+    </div>
+  </div>
+
+  <div class="leader" aria-labelledby="leaderboard">
+    <h3 id="leaderboard">Neighborhood Leaders</h3>
+    <div class="leader-list">
+      <div class="leader-item"><div class="avatar">AL</div><div class="meta"><b>Alice L.</b><span style="color:var(--muted);
+  </body>
+</HTML>
